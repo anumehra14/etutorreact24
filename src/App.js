@@ -4,18 +4,11 @@ import Navbar from './components/Navbar'; // Assuming Navbar is in the same fold
 import Login from './components/Login';
 import About from './components/About';
 import Contact from './components/Contact';
+import ViewStudents from './components/ViewStudents';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/contactus" element={<Contact />} />
-        <Route path="/login"    element={<Login />} />
-        <Route path="/aboutus" element={<About />} />
-      </Routes>
-    </Router>
+    <ViewStudents/>
   );
 }
 
